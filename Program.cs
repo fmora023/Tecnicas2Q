@@ -1,3 +1,5 @@
+using DemoClase.Utilities;
+
 namespace DemoClase
 {
     internal static class Program
@@ -14,8 +16,12 @@ namespace DemoClase
             var list = new List<int> { 10, 2, 3, 54, 5, 6, 9, 1 };
             
             var menor = Ejercicios.GetMenor(list);
-
             Console.WriteLine($"El menor es: {menor}");
+
+            var summatory = Ejercicios.GetElementsSum(list);
+            Console.WriteLine($"La suma de los elementos es: {summatory}");
+
+            var par_impar = Ejercicios.GetParImpar(list);
 
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());

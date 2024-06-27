@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoClase
+namespace DemoClase.Utilities
 {
     /// <summary>
     /// Ejercicios de clase.
@@ -33,6 +33,63 @@ namespace DemoClase
             }
 
             return result;
+        }
+
+        /// <summary>
+        /// Gets the sum of the elements of a list.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns> the sum of the elements.</returns>
+        public static int GetElementsSum(List<int> input)
+        {
+            var result = 0;
+
+            if (ValidateInput(input))
+            {
+                foreach (var item in input)
+                {
+                    result += item;
+                }
+            }
+
+            return result;
+        }
+
+        /// <summary>
+        /// Gets the par and impar elements of a list.
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns> An Ejercicio3 element with the results.</returns>
+        public static Ejercicio3 GetParImpar(List<int> input)
+        {
+            var result = new Ejercicio3();
+
+            if (ValidateInput(input))
+            {
+                foreach (var element in input)
+                {
+                    if (element % 2 == 0)
+                    {
+                        result.Pares.Add(element);
+                    }
+                    else
+                    {
+                        result.Impares.Add(element);
+                    }
+                }
+            }            
+
+            return result;
+        }
+
+        private static bool ValidateInput(List<int> input)
+        {
+            if (input == null || input.Count == 0)
+            {
+                return false;
+            }
+
+            return true;
         }
     }
 }
