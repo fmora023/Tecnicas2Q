@@ -15,4 +15,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ControllerClase\ControllerClase.csproj" />
+  </ItemGroup>
+
 </Project>

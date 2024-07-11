@@ -28,12 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btn_accept = new Button();
+            SuspendLayout();
+            // 
+            // btn_accept
+            // 
+            btn_accept.Location = new Point(127, 506);
+            btn_accept.Name = "btn_accept";
+            btn_accept.Size = new Size(352, 29);
+            btn_accept.TabIndex = 0;
+            btn_accept.Text = "Accept";
+            btn_accept.UseVisualStyleBackColor = true;
+            btn_accept.Click += Btn_Accept_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1239, 715);
+            Controls.Add(btn_accept);
+            Name = "Form1";
+            Text = "Form1";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btn_accept;
     }
 }
