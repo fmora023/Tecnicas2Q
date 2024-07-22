@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btn_accept = new Button();
+            btn_load = new Button();
             SuspendLayout();
             // 
-            // btn_accept
+            // btn_load
             // 
-            btn_accept.Location = new Point(127, 506);
-            btn_accept.Name = "btn_accept";
-            btn_accept.Size = new Size(352, 29);
-            btn_accept.TabIndex = 0;
-            btn_accept.Text = "Accept";
-            btn_accept.UseVisualStyleBackColor = true;
-            btn_accept.Click += Btn_Accept_Click;
+            btn_load.Location = new Point(820, 64);
+            btn_load.Name = "btn_load";
+            btn_load.Size = new Size(352, 29);
+            btn_load.TabIndex = 0;
+            btn_load.Text = "Load";
+            btn_load.UseVisualStyleBackColor = true;
+            btn_load.Click += Btn_Accept_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1239, 715);
-            Controls.Add(btn_accept);
+            Controls.Add(btn_load);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -54,6 +54,6 @@
 
         #endregion
 
-        private Button btn_accept;
+        private Button btn_load;
     }
 }
