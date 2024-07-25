@@ -4,27 +4,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DemoClase
+namespace Quiz2
 {
     /// <summary>
-    /// Template for result of Ejercicio3.
+    /// PairImpair class.
     /// </summary>
-    public class Ejercicio3
+    public class PairImpair
     {
         /// <summary>
         /// Gets or sets the pares.
         /// </summary>
-        public List<int> Pares { get;set; }
+        public List<int> Pares { get; set; }
 
         /// <summary>
         /// Gets or sets the impares.
         /// </summary>
-        public List<int> Impares { get;set; }
+        public List<int> Impares { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Ejercicio3"/> class.
+        /// Initializes a new instance of the <see cref="PairImpair"/> class.
         /// </summary>
-        public Ejercicio3()
+        public PairImpair()
         {
             Pares = new List<int>();
             Impares = new List<int>();
